@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+</head>
+
+
+<body>
+    <script>
+
+
+        function sumInput() {
+
+            let arr = [];
+
+            while (true) {
+
+                let value = prompt("Введите число", "");
+
+                if (!isFinite(value) || value === null || value === "") break;
+
+                arr.push(+value);
+
+            }
+
+            let sum = 0;
+            for (let number of arr) {
+                sum += number;
+            }
+
+            return sum;
+
+        }
+
+        alert( sumInput() );
+
+
+    </script>
+</body>
+</html>
